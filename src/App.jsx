@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CATS, deep, kindKey, medleySeq } from "./constants.js";
 import { newGame } from "./engine/game.js";
-import { ensureModes, setRatingModeGlobal, setStatsMode } from "./profiles.js";
+import { ensureModes, loadProfiles, loadSettings, setRatingModeGlobal, setStatsMode } from "./profiles.js";
 import { Flow, GameOnSplash } from "./screens/flow.jsx";
 import { Game } from "./screens/game.jsx";
 import { Home } from "./screens/home.jsx";

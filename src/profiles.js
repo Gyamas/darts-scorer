@@ -115,7 +115,7 @@ export function hardAvg(branch) {
   return branch.s01.darts ? (branch.s01.points / branch.s01.darts) * 3 : null;
 }
 
-async function loadProfiles() {
+export async function loadProfiles() {
   try {
     const r = await window.storage.get("profiles");
     return r ? JSON.parse(r.value) : [];
@@ -123,7 +123,7 @@ async function loadProfiles() {
     return []; // 初回はキーが無いのでエラー → 空でOK
   }
 }
-async function loadSettings() {
+export async function loadSettings() {
   try {
     const r = await window.storage.get("settings");
     return r ? JSON.parse(r.value) : {};
