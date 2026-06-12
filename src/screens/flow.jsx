@@ -1024,7 +1024,6 @@ export function Flow({ cat, mode, profiles, upsertProfile, deleteProfile, onHome
                 </div>
               </div>
             )}
-            )}
           </>
         )}
       </div>

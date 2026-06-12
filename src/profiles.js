@@ -131,12 +131,12 @@ export async function loadSettings() {
     return {};
   }
 }
-async function saveSettings(obj) {
+export async function saveSettings(obj) {
   try {
     await window.storage.set("settings", JSON.stringify(obj));
   } catch (e) {}
 }
-async function saveProfiles(list) {
+export async function saveProfiles(list) {
   try {
     await window.storage.set("profiles", JSON.stringify(list));
   } catch (e) {
